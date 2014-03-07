@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+  <html lang="en">
+      <head>
+      	<title>Hola Mundo</title>
+      </head>
+      <body>
+        <h2>Libros</h2>
+        <hr>
+      	<ul>
+      		{% for libro in contenido %}
+      		<li>
+      			{{libro.nombre}} <small>({{libro.Fecha}})</small>
+      		</li>
+      		{% endfor %}
+      	</ul>
+      <hr>
+      </body>	
+  </html>    
